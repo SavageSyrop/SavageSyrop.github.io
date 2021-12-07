@@ -1,6 +1,6 @@
 document.getElementsByClassName("header")[0].innerHTML=` <div class="header-bg"></div>
         <div class="header-left">
-            <a href="http://localhost:63342/htmlKursach/mainpage.html?_ijt=9v87lv54lrm1ugi51l6u1do3io"><img src="images/au151.png" alt="OUTBACK AUTOS" href="http://localhost:63342/htmlKursach/mainpage.html?_ijt=7gmcju2csvq0n6h474nbsk4aa2"></a>
+            <a href="mainpage.html"><img src="images/au151.png" alt="OUTBACK AUTOS" href="mainpage.html"></a>
             <nav>
                 <div class="toggle-menu" onclick="buttonClicked(this)">
                     <div class="bar1"></div>
@@ -8,13 +8,13 @@ document.getElementsByClassName("header")[0].innerHTML=` <div class="header-bg">
                     <div class="bar3"></div>
                 </div>
                 <ul>
-                    <li><a href="http://localhost:63342/htmlKursach/shoppage.html?_ijt=8t0lmci8r3v56snugrgvlcpp8q">Shop</a></li>
-                    <li><a href="http://localhost:63342/htmlKursach/sellpage.html?_ijt=lgb6lk79463l2b5dkodd462vbt">Sell</a></li>
+                    <li><a href="shoppage.html">Shop</a></li>
+                    <li><a href="sellpage.html">Sell</a></li>
                     <li><a href="#">More<svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.982.5L8 6.53 14.018.5l.982.985L8 8.5 1 1.485 1.982.5z" fill="#F1BC00" stroke="#F1BC00" stroke-linejoin="round"></path></svg></a>
                         <ul>
-                            <li><a href="http://localhost:63342/htmlKursach/crewpage.html?_ijt=ri2pbmt1pe6co8v15kk6h0sdlu">Meet the team</a></li>
-                            <li><a href="http://localhost:63342/htmlKursach/testpage.html?_ijt=tteh5k27dl6l7383livv54vo2j">What car will fit you?</a></li>
-                            <li><a href="http://localhost:63342/htmlKursach/newspage.html?_ijt=qeuq4dm9gqllvdbujllhvon8k8">News</a></li>
+                            <li><a href="crewpage.html">Meet the team</a></li>
+                            <li><a href="testpage.html">What car will fit you?</a></li>
+                            <li><a href="newspage.html">News</a></li>
                         </ul>
                         <!—конец первого уровня выпадающего списка -->
                     </li>
@@ -68,11 +68,11 @@ document.getElementsByClassName("footer")[0].innerHTML=`
         <div class="footer-middle-rows">
             <div>
                 <h3>Shop</h3>
-                <a href="http://localhost:63342/htmlKursach/shoppage.html?_ijt=8t0lmci8r3v56snugrgvlcpp8q">All autos</a>
+                <a href="shoppage.html">All autos</a>
             </div>
             <div>
                 <h3>Sell</h3>
-                <a href="http://localhost:63342/htmlKursach/sellpage.html?_ijt=lgb6lk79463l2b5dkodd462vbt">Sell your car</a>
+                <a href="sellpage.html">Sell your car</a>
             </div>
             <div>
                 <h3>Finance</h3>
@@ -83,15 +83,15 @@ document.getElementsByClassName("footer")[0].innerHTML=`
                 <h3>About</h3>
                 <a>How OA Works</a>
                 <a>Online Payment</a>
-                <a href="http://localhost:63342/htmlKursach/crewpage.html?_ijt=ri2pbmt1pe6co8v15kk6h0sdlu">Meet the team</a>
-                <a href="http://localhost:63342/htmlKursach/newspage.html?_ijt=qeuq4dm9gqllvdbujllhvon8k8">News</a>
+                <a href="crewpage.html">Meet the team</a>
+                <a href="newspage.html">News</a>
                 <a>Careers</a>
             </div>
             <div>
                 <h3>More</h3>
                 <a>Protections Plans</a>
                 <a>Accessories</a>
-                <a href="http://localhost:63342/htmlKursach/testpage.html?_ijt=tteh5k27dl6l7383livv54vo2j">Test</a>
+                <a href="testpage.html">Test</a>
             </div>
             <div>
                 <h3>Visit us</h3>
@@ -103,23 +103,23 @@ document.getElementsByClassName("footer")[0].innerHTML=`
         <div class="footer-middle-mob-columns">
                 <div>
                         <h3>Shop</h3>
-                        <a href="http://localhost:63342/htmlKursach/shoppage.html?_ijt=8t0lmci8r3v56snugrgvlcpp8q">All autos</a>
+                        <a href="shoppage.html">All autos</a>
                         <h3>Finance</h3>
                         <a>Calculators</a>
                         <a>Get Pre-qualified</a>
                         <h3>More</h3>
                         <a>Protections Plans</a>
                         <a>Accessories</a>
-                        <a href="http://localhost:63342/htmlKursach/testpage.html?_ijt=tteh5k27dl6l7383livv54vo2j">Test</a>
+                        <a href="testpage.html">Test</a>
                 </div>
                 <div>
                         <h3>Sell</h3>
-                        <a href="http://localhost:63342/htmlKursach/sellpage.html?_ijt=lgb6lk79463l2b5dkodd462vbt">Sell your car</a>
+                        <a href="sellpage.html">Sell your car</a>
                         <h3>About</h3>
                         <a>How OA Works</a>
                         <a>Online Payment</a>
-                        <a href="http://localhost:63342/htmlKursach/crewpage.html?_ijt=ri2pbmt1pe6co8v15kk6h0sdlu">Meet the team</a>
-                        <a href="http://localhost:63342/htmlKursach/newspage.html?_ijt=qeuq4dm9gqllvdbujllhvon8k8">News</a>
+                        <a href="crewpage.html">Meet the team</a>
+                        <a href="newspage.html">News</a>
                         <a>Careers</a>
                         <p> <a href="https://twitter.com/WS_AUTO"><svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.782 5.981c.02.263.02.525.02.788C26.801 14.775 20.645 24 9.394 24 5.928 24 2.709 23.006 0 21.281c.492.056.966.075 1.477.075 2.86 0 5.493-.956 7.596-2.587-2.69-.056-4.944-1.8-5.72-4.2a7.78 7.78 0 0 0 1.155.093c.55 0 1.099-.075 1.61-.206-2.803-.562-4.906-3-4.906-5.944v-.074c.815.45 1.762.73 2.766.768A6.036 6.036 0 0 1 1.25 4.162c0-1.125.303-2.156.833-3.056 3.012 3.675 7.539 6.075 12.615 6.338a6.776 6.776 0 0 1-.152-1.388C14.546 2.72 17.274 0 20.665 0c1.762 0 3.353.731 4.47 1.913A12.12 12.12 0 0 0 29.017.45a6.052 6.052 0 0 1-2.69 3.337 12.363 12.363 0 0 0 3.524-.937 13.078 13.078 0 0 1-3.069 3.131z" fill="#fff"></path></svg></a>
                             <a href="https://www.facebook.com/westsideautowholesale"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 22.675c0 .732-.593 1.325-1.325 1.325H16.56v-9.294h3.12l.466-3.622H16.56V8.77c0-1.048.29-1.763 1.795-1.763h1.918v-3.24c-.332-.044-1.47-.143-2.795-.143-2.766 0-4.659 1.688-4.659 4.788v2.67H9.692v3.623h3.127V24H1.325A1.325 1.325 0 0 1 0 22.675V1.325C0 .593.593 0 1.325 0h21.35C23.407 0 24 .593 24 1.325v21.35z" fill="#fff"></path></svg></a>
