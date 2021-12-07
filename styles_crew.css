@@ -1,34 +1,14 @@
-body
-{
-    background: #F6F6F6;
-}
-
-a
-{
-    cursor: pointer;
-}
-
 main
 {
     display: flex;
     flex-direction: column;
     background:white;
-    margin-top: 100px;
-    padding-bottom: 150px;
+    margin-top: 110px;
+    padding-bottom: 50px;
+    gap: 22vh;
+    height: 100%;
     margin-left: 10%;
     margin-right: 10%;
-    align-items: center;
-    justify-content: center;
-}
-
-main>p
-{
-    text-align: center;
-    font-family: Gilroy;
-    font-weight: bold;
-    font-size: 28px;
-    color: black;
-    padding-bottom: 50px;
 }
 
 
@@ -41,11 +21,23 @@ main h1
 {
     font-family: Gilroy;
     color: black;
-    font-size: 154px;
+    font-size: max(2em,min(9em,10.15vw)) !important;
     text-align:center;
     text-shadow: 0 0 10px #F1BC00;
-    padding-top: 80px;
-    margin-bottom: 40px;
+    font-weight: lighter;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    white-space: nowrap;
+}
+
+main h3
+{
+    font-size: max(1.7em,min(6em,5.15vw)) !important;
+}
+
+main p
+{
+    font-size: max(1em,min(2em,3.15vw)) !important;
 }
 
 .boss-box
@@ -177,7 +169,7 @@ main h1
 .member-box img
 {
     max-width: 250px;
-    max-height: 250px;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -197,7 +189,7 @@ main h1
 }
 .crew-box>button
 {
-    font-size: 32px;
+    font-size: max(1em,min(3em,3.15vw)) !important;
     font-family: Gilroy;
     font-weight: bold;
     color: black;
@@ -345,4 +337,18 @@ polygon
 .send-rating
 {
     margin: auto;
+}
+
+
+@media (max-width: 1300px)
+{
+    .boss-box
+    {
+        display: none;
+    }
+
+    .member-box p:nth-child(3)
+    {
+        display:none;
+    }
 }

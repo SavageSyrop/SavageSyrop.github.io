@@ -1,19 +1,14 @@
-body
-{
-    background: #F6F6F6;
-}
-
 main
 {
     display: flex;
     flex-direction: column;
     background:white;
-    margin-top: 100px;
+    margin-top: 110px;
     padding-bottom: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
     gap: 22vh;
     height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
@@ -26,13 +21,43 @@ main h1
 {
     font-family: Darmstadt;
     color: black;
-    font-size: 154px;
+    font-size: max(2em,min(9em,10.15vw)) !important;
     text-align:center;
     text-shadow: 0 0 10px #F1BC00;
     font-weight: lighter;
     padding-top: 90px;
     padding-bottom: 40px;
+    white-space: nowrap;
 }
+
+main h3
+{
+    font-size: max(1.7em,min(6em,5.15vw)) !important;
+}
+
+main p
+{
+    font-size: max(1em,min(3em,3.15vw)) !important;
+}
+
+main h4
+{
+    font-size: max(0.5em,min(1em,1.4vw)) !important;
+}
+
+
+.counter
+{
+    font-size: max(0.6em,min(1em,1.4vw)) !important;
+}
+
+.counter-item img
+{
+    max-width: 128px;
+    width: 100%;
+    margin: auto;
+}
+
 
 
 .shop-info
@@ -72,13 +97,7 @@ main h1
 
 }
 
-.counter-item img
-{
-    width: 100%;
-    max-width: 128px;
-    max-height: 128px;
-    margin: auto;
-}
+
 
 .shop-info>div
 {
@@ -108,8 +127,9 @@ main h1
 {
     transition: 0.3s;
     font-family: Gilroy;
-    font-size: 54px;
+    font-size: max(0.9em,min(4.5em,3.4vw));
     color: black;
+    text-align: center;
 }
 
 
@@ -125,11 +145,11 @@ main h1
     text-shadow: 0px 0px 2px green;
 }
 
-#australia img
+#australia
 {
 
     max-width: 350px;
-    max-height: 350px;
+    width: 100%;
 
 }
 
@@ -147,12 +167,12 @@ main h1
     }
 
     50%{
-        transform: scale(1.25);
+        transform: scale(1.15);
 
     }
 
     100%{
-        transform: scale(1.5);
+        transform: scale(1.3);
         color: #F1BC00;
     }
 
@@ -181,19 +201,20 @@ main h1
 {
     display: flex;
     align-items: center;
+    width: 100%
     gap: 40px;
 }
 
 .sell-info div p
 {
     font-family: Gilroy;
-    font-size: 28px;
+
 }
 
 .sell-info div img
 {
-    width: 200px;
-    height: 200px;
+    max-width: 175px;
+    width: 100%;
 }
 
 .sell-info button
@@ -337,7 +358,8 @@ main h1
     grid-column-start:1;
     grid-column-end: 2;
     margin: auto;
-    padding-bottom: 30px;
+    width: 100%;
+    max-width: 128px;
 }
 .crew-info h3
 {
@@ -351,7 +373,7 @@ main h1
 .crew-info p
 {
     font-family: Gilroy;
-    font-size: 28px;
+    font-size: max(0.9em,min(2.5em,2.4vw)) !important;
     grid-column-start:2;
     grid-column-end: 4;
     margin: auto;
@@ -363,7 +385,7 @@ main h1
     border: 3px solid black;
     background:#F1BC00;
     font-family: Gilroy;
-    font-size: 34px;
+    font-size: max(0.9em,min(2.5em,2.4vw)) !important;
     padding: 5px;
     color: black;
     border-radius: 15px;
@@ -372,8 +394,10 @@ main h1
     grid-column-start:1;
     grid-column-end: 2;
     white-space: nowrap;
+    height: fit-content;
     transition: 0.3s;
     padding:10px;
+    margin-top: 10px;
 }
 
 .crew-info button:hover a

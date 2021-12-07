@@ -98,6 +98,12 @@ header
 
 }
 
+.header-left a img
+{
+    max-width: 300px;
+    width: 100%;
+}
+
 .header-left a
 {
     color: white;
@@ -320,7 +326,9 @@ footer
 {
     width: 100%;
     background: black;
+    padding-bottom: 8px;
 }
+
 
 
 footer a
@@ -526,7 +534,9 @@ footer a
 	display: none;
 	cursor: pointer;
 	float: left;
-
+	z-index: 777;
+	position: relative;
+    padding: 10px;
 }
 .bar1, .bar2, .bar3 {
 	width: 32px;

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Our Crew</title>
     <link rel="stylesheet" href="styles_headfoot.css">
     <link rel="stylesheet" href="media_headfoot.css">
@@ -13,6 +14,7 @@
 
 <header class="header">
 </header>
+
 
 
 <main>
@@ -36,48 +38,52 @@
             </div>
         </div>
     </div>
-    <p>Every Outback Autos employee is part of one big family.<br>We work so that you can quickly sell your car in a trade-in or buy a new one.<br>Our experts are ready to help you at any stage, whether it is choosing a car, paperwork or technical inspection.</p>
-    <div class="crew-box">
 
-        <div class="member-box">
-            <img height="300px" src="images/papich.jpg" onclick="openModal()">
-            <h5>Vitaliy Zhal</h5>
-            <p>evilarthas1x1@autbackautos.au</p>
-            <p>Senior Sale Manager<br>Luremont Office</p>
-        </div>
-        <div class="member-box">
-            <img src="images/bogdan.jpg" onclick="openModal()">
-            <h5>Bogdan Stalnoy</h5>
-            <p>dyadyabogdan@outbackautos.au</p>
-            <p>Senior Mechanic<br>Dalamber Entrance</p>
-        </div>
 
-        <div class="member-box">
-            <img src="images/van.jpg" onclick="openModal()">
-            <h5>Van Darkholme</h5>
-            <p>dungeonmaster@outbackautos.au</p>
-            <p>Senior Mechanic<br>Luremont Entrance</p>
-        </div>
-        <div class="member-box">
-            <img src="images/mad.jpg" onclick="openModal()">
-            <h5>Matt Honey</h5>
-            <p>etozhemad@outbackautos.au</p>
-            <p>Senior Sales Manager<br>Dalamber Office</p>
-        </div>
-        <div class="member-box">
-            <img src="images/larin.png" onclick="openModal()">
-            <h5>Kit Round</h5>
-            <p>protiv@outbackautos.au</p>
-            <p>Finance Manager<br>Dalamber Office</p>
-        </div>
-        <div class="member-box">
-            <img src="images/goblin.jpg" onclick="openModal()">
-            <h5>Max Gus</h5>
-            <p>razvedopros@outbackautos.au</p>
-            <p>Senior Valuer<br>Luremont Office</p>
-        </div>
-        <button>Load more workers...</button>
+    <div>
+        <p style="text-align: center;padding-bottom: 20px">Every Outback Autos employee is part of one big family.<br>We work so that you can quickly sell your car in a trade-in or buy a new one.<br>Our experts are ready to help you at any stage, whether it is choosing a car, paperwork or technical inspection.</p>
+        <div class="crew-box">
 
+            <div class="member-box">
+                <img src="images/papich.jpg" onclick="openModal()">
+                <h5>Vitaliy Zhal</h5>
+                <p>evilarthas1x1@autbackautos.au</p>
+                <p>Senior Sale Manager<br>Luremont Office</p>
+            </div>
+            <div class="member-box">
+                <img src="images/bogdan.jpg" onclick="openModal()">
+                <h5>Bogdan Stalnoy</h5>
+                <p>dyadyabogdan@outbackautos.au</p>
+                <p>Senior Mechanic<br>Dalamber Entrance</p>
+            </div>
+
+            <div class="member-box">
+                <img src="images/van.jpg" onclick="openModal()">
+                <h5>Van Darkholme</h5>
+                <p>dungeonmaster@outbackautos.au</p>
+                <p>Senior Mechanic<br>Luremont Entrance</p>
+            </div>
+            <div class="member-box">
+                <img src="images/mad.jpg" onclick="openModal()">
+                <h5>Matt Honey</h5>
+                <p>etozhemad@outbackautos.au</p>
+                <p>Senior Sales Manager<br>Dalamber Office</p>
+            </div>
+            <div class="member-box">
+                <img src="images/larin.png" onclick="openModal()">
+                <h5>Kit Round</h5>
+                <p>protiv@outbackautos.au</p>
+                <p>Finance Manager<br>Dalamber Office</p>
+            </div>
+            <div class="member-box">
+                <img src="images/goblin.jpg" onclick="openModal()">
+                <h5>Max Gus</h5>
+                <p>razvedopros@outbackautos.au</p>
+                <p>Senior Valuer<br>Luremont Office</p>
+            </div>
+            <button>Load more workers...</button>
+
+        </div>
     </div>
 </main>
 
@@ -261,6 +267,8 @@
 
     function openModal()
     {
+        if (document.documentElement.clientWidth<800)
+            return;
         document.querySelector(".overlay").style.display="block";
         document.querySelector(".modal").style.display="block";
         let otziv = document.querySelector("#otziv");

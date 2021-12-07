@@ -1,23 +1,14 @@
-body
-{
-    background: #F6F6F6;
-}
-
-a
-{
-    cursor: pointer;
-}
-
 main
 {
     display: flex;
     flex-direction: column;
     background:white;
-    margin-top: 100px;
+    margin-top: 110px;
     padding-bottom: 50px;
+    gap: 22vh;
+    height: 100%;
     margin-left: 10%;
     margin-right: 10%;
-    text-align: center;
 }
 
 
@@ -30,10 +21,37 @@ main h1
 {
     font-family: Gilroy;
     color: black;
-    font-size: 100px;
+    font-size: max(1em,min(6.2em,6.0vw)) !important;
     text-align:center;
     text-shadow: 0 0 10px #F1BC00;
-    padding-top: 80px;
+    font-weight: lighter;
+    padding-top: 90px;
+    white-space: nowrap;
+}
+
+main h3
+{
+    font-size: max(1.7em,min(3em,4.15vw)) !important;
+}
+
+main h4
+{
+    font-size: max(0.5em,min(1em,1.4vw)) !important;
+}
+
+main h5
+{
+    font-size: max(0.8em,min(2em,3.4vw)) !important;
+}
+
+main>div p
+{
+    font-size: max(0.7em,min(2.7em,2.8vw)) !important;
+}
+
+main li
+{
+    font-size: max(0.6em,min(2.4em,2.4vw)) !important;
 }
 
 main>p
@@ -51,8 +69,6 @@ main>p
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(2,1fr);
     column-gap: 25px;
-    margin-top: 150px;
-    margin-bottom: 150px;
     align-items: start;
 
 }
@@ -155,7 +171,7 @@ main>p
     flex-direction: column;
     margin: auto;
     align-items: center;
-    margin-bottom: 150px;
+
 }
 
 .value-wrap h3
@@ -211,14 +227,7 @@ main>p
      font-size: 18px;
 }
 
-main>h3
-{
-    font-family: Gilroy;
-    color: #F1BC00;
-    font-weight: bold;
-    font-size: 54px;
-    margin-bottom: 30px;
-}
+
 
 .two-side
 {
@@ -311,4 +320,171 @@ main>h3
     font-family: Gilroy;
     color: black;
     font-size: 26px;
+}
+
+.pill-box>h3
+{
+    font-family: Gilroy;
+    color: #F1BC00;
+    font-weight: bold;
+    font-size: max(1.7em,min(3em,4.15vw)) !important;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.two-side>div>div p:nth-child(3)
+ {
+    margin-left: 20%;
+ }
+
+@media (max-width:1300px)
+{
+    .value-box
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .value-item
+    {
+        width: 100%;
+    }
+
+    .two-side
+    {
+        flex-direction: column;
+        margin: auto;
+        text-align: start;
+        margin-bottom: 100px;
+    }
+
+    .two-side>div
+    {
+        width: 100%;
+    }
+
+     .two-side>div:first-child
+     {
+         border-right: 3px solid #F1BC00;
+         border-bottom: none;
+         border-radius: 15px 15px 0px 0px;
+     }
+
+     .two-side>div:last-child
+     {
+         border-right: 3px solid #F1BC00;
+         border-bottom: none;
+         border-radius: 0px 0px 15px 15px;
+         border: 3px solid black;
+         border-top: none;
+     }
+
+     .two-side>div>div p:nth-child(3)
+     {
+        display:none;
+     }
+     .two-side>div>div p:nth-child(4)
+     {
+        display:none;
+     }
+
+     .buy-grid
+     {
+         grid-template-columns: 1fr;
+         grid-template-rows: repeat(4,1fr);
+         column-gap: 0px;
+         align-items: start;
+
+     }
+
+    .buy-grid #left
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+
+    #left h3
+    {
+        font-family: Gilroy;
+        color: #F1BC00;
+        margin-bottom: 5px;
+    }
+
+    #left p
+    {
+        font-family: Gilroy;
+        color: black;
+        margin-bottom: 5px;
+
+    }
+
+
+    #right h3
+    {
+        font-family: Gilroy;
+        color: #F1BC00;
+        margin-bottom: 5px;
+    }
+
+    #right p
+    {
+        font-family: Gilroy;
+        color: black;
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+
+    .buy-grid img
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: auto;
+    }
+
+    .buy-grid button
+    {
+
+        background:black;
+        color: white;
+        font-family: Gilroy;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 24px;
+        border: 3px solid #F1BC00;
+        border-radius: 15px;
+        transition: 0.3s;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        min-height: 100px;
+        min-width: 150px;
+        margin: auto;
+
+    }
+
+    .buy-grid button:hover
+    {
+        background:white;
+        color: black;
+    }
+
+
+    .buy-grid #right
+    {
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
 }
