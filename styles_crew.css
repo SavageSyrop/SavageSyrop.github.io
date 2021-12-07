@@ -1,0 +1,348 @@
+body
+{
+    background: #F6F6F6;
+}
+
+a
+{
+    cursor: pointer;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    background:white;
+    margin-top: 100px;
+    padding-bottom: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+main>p
+{
+    text-align: center;
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+    padding-bottom: 50px;
+}
+
+
+button
+{
+    cursor: pointer;
+}
+
+main h1
+{
+    font-family: Gilroy;
+    color: black;
+    font-size: 154px;
+    text-align:center;
+    text-shadow: 0 0 10px #F1BC00;
+    padding-top: 80px;
+    margin-bottom: 40px;
+}
+
+.boss-box
+{
+    width: border-box;
+}
+
+.crew-box
+{
+    width: 80%;
+    margin: auto;
+}
+
+.member-box
+{
+    width: 50%;
+}
+
+.card-box
+{
+    width: fit-content;
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    margin-bottom: 10vh;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 100%;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+
+.card-box img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 3px solid navy;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.card-box .icons img
+{
+    width:64px;
+    height:64px;
+    border:none;
+    cursor: pointer;
+}
+
+.icons
+{
+    display: none;
+}
+
+.card-text
+{
+
+    font-family: Gilroy;
+    text-align: center;
+    color: navy;
+    display: none;
+}
+
+.card-text h3
+{
+    font-size: 26px;
+}
+
+.card-text h6
+{
+    font-size: 20px;
+}
+
+
+.card-buttons
+{
+    display: none;
+    align-items: center;
+    text-align: center;
+}
+
+.card-buttons button
+{
+    padding: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px black;
+    font-family: Gilroy;
+    color: navy;
+    font-size: 22px;
+    margin-left: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card-buttons button:hover
+{
+    color: #F1BC00;
+    background: navy;
+}
+
+.crew-box
+{
+    width: 80%;
+    background: black;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 3px solid #F1BC00;
+}
+
+
+.member-box
+{
+    padding: 10px;
+    padding-top: 50px;
+    width: fit-content;
+    margin:auto;
+}
+
+.member-box img
+{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 15px;
+}
+
+.member-box h5
+{
+    color: #F1BC00;
+    font-family: Gilroy;
+    font-size: 26px;
+}
+
+.member-box p
+{
+    color: white;
+    font-family: Gilroy;
+    font-size: 20px;
+
+}
+.crew-box>button
+{
+    font-size: 32px;
+    font-family: Gilroy;
+    font-weight: bold;
+    color: black;
+    background:white;
+    border: 3px solid #F1BC00;
+    padding: 10px;
+    margin: 50px auto;
+    border-radius: 15px;
+    width: 50%;
+    transition: 0.3s;
+
+}
+
+
+.crew-box>button:hover
+{
+    color: white;
+    background:#F1BC00;
+    border: 3px solid black;
+}
+
+
+.open-modal
+{
+    width: 10%;
+    text-align: center;
+    padding: 20px;
+    font-family: Gilroy;
+    color: snow;
+    font-weight: bold;
+    font-size: 22px;
+    border: 3px solid silver;
+    border-radius: 15px;
+    margin:auto;
+    margin-bottom: 10vh;
+}
+
+
+.overlay
+{
+
+       display: none;
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, .5);
+       z-index: 20;
+       transition: .3s all;
+}
+
+.modal
+{
+
+    display: none;
+    width: 30%;
+    position: fixed;
+    top: 33%;
+    left: 33%;
+    z-index: 30;
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    transition: 0.3s all;
+    background: #F1BC00;
+    color: snow;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+.star-box h3
+{
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: Gilroy;
+    color: purple;
+}
+
+.modal input
+{
+    padding: 10px;
+    border: 3px solid silver;
+    border-radius: 15px;
+    font-size: 22px;
+    font-family: Gilroy;
+    color: purple;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 94%;
+}
+
+
+.modal button
+{
+    padding: 10px;
+    background: snow;
+    border: 3px solid silver;
+    border-radius: 30px;
+    font-family: Gilroy;
+    color: navy;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.stage-2
+{
+    display: none;
+}
+
+
+.stage-2 a
+{
+    margin-left: 70%;
+     font-family: Gilroy;
+        color: white;
+        font-size: 16px;
+        white-space: nowrap;
+
+}
+
+polygon
+{
+    border: 0px;
+}
+
+.verdict h1
+{
+    margin-top: 30px;
+    display: none;
+}
+
+.send-rating
+{
+    display: none;
+    width: 40%;
+}
+
+#otziv
+{
+    display: none;
+}
+
+.send-rating
+{
+    margin: auto;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+  <link rel="stylesheet" href="styles_headfoot.css">
+  <link rel="stylesheet" href="media_headfoot.css">
+  <script defer src="headfoot.js"></script>
+  <link rel="shortcut icon" href="images/au151.png" type="image/png">
+  <link rel="stylesheet" href="styles_news.css">
+    <script>
+        function blurryface(obj)
+        {
+            for (let i=0;i<document.getElementsByClassName('news-item').length;i++)
+                document.getElementsByClassName('news-item')[i].style="filter: blur(5px);";
+             obj.style="filter: blur(0px);";
+        }
+
+        function mouseleft()
+        {
+            for (let i=0;i<document.getElementsByClassName('news-item').length;i++)
+                document.getElementsByClassName('news-item')[i].style="filter: blur(0px);";
+        }
+    </script>
+
+</head>
+<body>
+
+
+
+<header class="header">
+</header>
+
+
+<main>
+    <h1>Most recent news</h1>
+    <div class="slider">
+        <div class="slides">
+            <a href="#item1"><div id="slider-1">
+                <div class="slide-info">
+                    <h3>How much does a car consume?</h3>
+                    <p>Getting a new car is always exciting. It’s easy to get caught up in the moment and not realise that there may be extra costs involved past the vehicle’s price.</p>
+                </div>
+            </div></a>
+            <a href="#item2"><div id="slider-2">
+                <div class="slide-info">
+                    <h3>New-look Ford Mustang</h3>
+                    <p>The new generation of V8 Supercar racing in Australia was revealed at Bathurst on Friday</p>
+                </div>
+            </div></a>
+            <a href="#item3"><div id="slider-3">
+                <div class="slide-info">
+                    <h3>Australians can now test the new Polestar 2 electric car</h3>
+                    <p>The latest electric car brand to launch in Australia brings European style at a relatively affordable price, but there is a catch.</p>
+                </div>
+            </div></a>
+            <a href="#item4"><div id="slider-4">
+                <div class="slide-info">
+                    <h3>Press Release: Most Loved Australian Businesses</h3>
+                    <p>Outback Autos is awarded one of eight Most Loved Australian Business Award</p>
+                </div>
+            </div></a>
+        </div>
+    </div>
+
+    <div class="news-box">
+        <div class="news-item" id="item1" onmouseover="blurryface(this)" onmouseleave="mouseleft()">
+            <img src="images/moneycar.jpg">
+            <h5>Expensive purchase</h5>
+            <p>
+                Getting a new car is always exciting. It’s easy to get caught up in the moment and not realise that there may be extra costs involved past the vehicle’s selling price. For instance, stamp duty applies to any transfer of ownership, including properties and cars.
+                If you buy a new or used car, you’ll need to factor the cost of vehicle stamp duty into the final price.
+            </p>
+            <a>More...</a>
+        </div>
+        <div class="news-item" id="item2" onmouseover="blurryface(this)" onmouseleave="mouseleft()">
+            <img src="images/fordnews.jpg">
+            <h5>New Mustang</h5>
+            <p>The new-look cars are much closer to what you find on the street, with many of the panels effectively interchangeable between the two - something that cannot be said for the current highly-modified Mustang and Holden Commodore.
+
+                While all panels are made from composite materials to save cost and weight, the doors, bonnet, boot and roof, as well as the lights and glasshouse, are all identical in dimensions to the road-going equivalents.
+
+                To provide a more aggressive and purposeful look, both models feature ‘pumped out’ front and rear guards, as well as racing-style front spoiler and a rear wing.</p>
+            <a>More...</a>
+        </div>
+        <div class="news-item" id="item3" onmouseover="blurryface(this)" onmouseleave="mouseleft()">
+            <img src="images/polestar.jpg">
+            <h5>Polestar Electrocar</h5>
+            <p>The latest electric car brand to launch in Australia brings European style at a relatively affordable price, but there is a catch.The Polestar is built in China and features handsome styling and plush luxury interiors that rival mainstream European machines.Prices start at $59,900 before on-road costs, but will only cost about $59,000 on the road after EV incentives in NSW, Victoria and South Australia have been applied.</p>
+            <a>More...</a>
+        </div>
+        <div class="news-item" id="item4" onmouseover="blurryface(this)" onmouseleave="mouseleft()">
+            <img src="images/au151.png">
+            <h5>Outback Autos got a reward!</h5>
+            <p>Perth, WA. – Nov. 28, 2021. Westside Auto Wholesale, the leading West Australian used car dealership, is awarded one of eight Most Loved Australian Business Award by Podium in Perth – a spotlight reserved for the most beloved local businesses. Westside Auto Wholesale was the only Automotive business recognised across the country in the process. Podium and the COSBOA (Council of Small Business Organisations Australia) have chosen Westside Auto Wholesale among other fine businesses thanks to its proud local heritage, outstanding customer service, and far-reaching environmental goals.</p>
+            <a>More...</a>
+        </div>
+        <div class="news-item" onmouseover="blurryface(this)" onmouseleave="mouseleft()">
+            <img src="images/roflanKaktoos2.png">
+            <h5>Our new mascot - Victor</h5>
+            <p>Victor Vector was born in 1990 near our shop. This strong cactus represents reliability of our dealership. After years of studying he became an anti-theft expert. For buying and installing "Blue Garant" anti-theft system you will receive a sticker and cap with Victor as a present! </p>
+            <a>More...</a>
+        </div>
+        <div class="news-item" onmouseover="blurryface(this)" onmouseleave="mouseleft()">
+            <img src="images/popart.jpg" height="300px">
+            <h5>Retro game by Australian Game Studio Hangar 54</h5>
+            <p>Try out new game "Outback Cash" made by Hangar 54. This is an open world game set in 1970 in Outback. Player is able to perform various missions, explore Australia, join races with other players. But most importantly, YOU CAN SEE REPRESENTATION OF OUR RETRO STYLE SHOP IN GAME!</p>
+            <a>More...</a>
+        </div>
+    </div>
+
+    <button>Load more news...</button>
+
+</main>
+
+
+<footer class="footer">
+</footer>
+
+
+
+</body>
+</html>

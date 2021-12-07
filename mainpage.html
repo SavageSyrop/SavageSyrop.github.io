@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Outback Autos</title>
+    <link rel="stylesheet" href="styles_headfoot.css">
+    <link rel="stylesheet" href="media_headfoot.css">
+    <link rel="stylesheet" href="main_media.css">
+    <script defer src="headfoot.js"></script>
+    <link rel="shortcut icon" href="images/au151.png" type="image/png">
+    <link rel="stylesheet" href="styles_main.css">
+</head>
+<body>
+
+
+
+<header class="header">
+</header>
+
+<main>
+    <div>
+        <h1>OUTBACK AUTOS</h1>
+        <div class="counter-box">
+            <div class="counter-item">
+                <img src="images/car-dealer.png">
+                <div class="counter" data-target="7">0</div>
+                <h4>Showrooms</h4>
+            </div>
+            <div class="counter-item">
+                <img src="images/handshake.png"/>
+                <div class="counter" data-target="7302">0</div>
+                <h4>Current sell offers</h4>
+            </div>
+            <div class="counter-item">
+                <img src="images/customers.png"/>
+                <div class="counter" data-target="100000">0</div>
+                <h4>Customers</h4>
+            </div>
+            <div class="counter-item">
+                <img src="images/shield.png"/>
+                <div class="counter" data-target="27">0</div>
+                <h4>Years of work</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop-info">
+        <h3>Rich choice of cars</h3>
+        <div>
+            <img src="images/australia.png" id="australia">
+            <div>
+                <p>Our сar dealership already works for over 10 years.
+                During this time, thousands of clients from Australia have visited us.
+                There are many car models on the sales list.</p>
+                <a href="http://localhost:63342/htmlKursach/shoppage.html?_ijt=8t0lmci8r3v56snugrgvlcpp8q">See for yourself!</a>
+             </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="sell-info">
+        <h3>Interested in in trade-in or sell?</h3>
+        <div>
+            <p>We are always looking to purchase good quality vehicles<br>
+                Trade your car for sale on a new car or for money.
+            </p>
+            <img src="images/car-spark.png">
+        </div>
+        <button type="button"><a href="http://localhost:63342/htmlKursach/sellpage.html?_ijt=lgb6lk79463l2b5dkodd462vbt">Validate your car</a></button>
+    </div>
+
+    <div class="test-info">
+        <h3>Uncertain or struggling with choice?</h3>
+        <div>
+            <p>Complete a simple test.<br>It will show the most suitable car.<br></p>
+            <img src="images/problem.png">
+            <button class="buttonFlip">
+                <a href="http://localhost:63342/htmlKursach/testpage.html?_ijt=tteh5k27dl6l7383livv54vo2j">
+                    <div class="buttonInner">
+                        <p class="front">TEST</p>
+                        <p class="back">START</p>
+                    </div>
+                </a>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="crew-info">
+        <img src="images/staff.png">
+        <h3>Crew of professionals</h3>
+        <p>Our staff are amongst the best in the industry.<br>
+        High quality service and deal management are guaranteed.</p>
+        <button><a href="http://localhost:63342/htmlKursach/crewpage.html?_ijt=ri2pbmt1pe6co8v15kk6h0sdlu">Get to know them</a></button>
+    </div>
+
+    <div class="youtube-video">
+        <h3>Check out our welcoming video</h3>
+        <iframe width="100%" height="700px" src="https://www.youtube.com/embed/Yw1xJBVJnGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <div class="end-wrap">
+        <div class="latest-news">
+            <h3>News about cars and our dealership</h3>
+            <button type="button"><a href="http://localhost:63342/htmlKursach/newspage.html?_ijt=qeuq4dm9gqllvdbujllhvon8k8">Check the news</a></button>
+        </div>
+        <div class="end-info">
+            <h3>If you still got questions</h3>
+            <p>Call us <span>+7 (913) 322-54-27</span><br>or<br>Mail us at <span>outbackautos@gmail.com</span></p>
+        </div>
+
+    </div>
+</main>
+
+
+<footer class="footer">
+</footer>
+
+
+
+</body>
+<script>
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        counters.forEach(counter=>
+        {
+            const updateCount=()=>{
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const inc = target/speed;
+
+            if (count<target)
+            {
+                counter.innerText = Math.ceil(count+inc);
+                setTimeout(updateCount,1);
+            } else
+            {
+                count.innerText=target;
+            }
+
+          }
+          updateCount();
+        });
+    </script>
+</html>

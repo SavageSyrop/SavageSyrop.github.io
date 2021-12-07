@@ -1,0 +1,163 @@
+@media (max-width: 1300px)
+ {
+    main>div>h1
+    {
+        font-size: 100px;
+    }
+
+    main .shop-info h3
+    {
+        font-size: 54px;
+    }
+
+    main .shop-info a
+    {
+        font-size: 54px;
+    }
+
+    main .shop-info p
+    {
+        font-size: 24px;
+    }
+
+    main .shop-info #australia
+    {
+        width: 250px;
+        height: 250px;
+    }
+
+    main .sell-info h3
+    {
+        font-size: 34px;
+    }
+
+    main .test-info h3
+    {
+        font-size: 34px;
+    }
+
+    main .crew-info h3
+    {
+        font-size: 34px;
+    }
+
+    main .crew-info p
+    {
+        font-size: 18px;
+    }
+
+    main .youtube-video h3
+    {
+        font-size: 38px;
+    }
+
+ }
+
+ @media (max-width: 1150px)
+ {
+    header .header-right
+    {
+        display: none;
+    }
+ }
+
+ @media (max-width: 800px)
+ {
+     main>div>h1
+     {
+         font-size: 60px;
+     }
+
+
+}
+
+@media (max-width: 850px)
+{
+    main .counter-box
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    main .counter-item
+    {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+    main .counter-item img
+    {
+        margin: 0;
+
+    }
+}
+
+@media (max-width: 900px)
+{
+    main .test-info img
+    {
+        display: none;
+    }
+
+    main .crew-info
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+     main .crew-info h3
+     {
+        grid-column-start:1;
+        grid-column-end: 3;
+        grid-row-start:1;
+        grid-row-end: 2;
+     }
+
+     main .crew-info img
+     {
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start:2;
+        grid-row-end: 3;
+     }
+
+     main .crew-info p
+     {
+        grid-column-start:2;
+        grid-column-end: 3;
+        grid-row-start:2;
+        grid-row-end: 3;
+     }
+
+      main .crew-info button
+      {
+         grid-column-start:1;
+         grid-column-end: 3;
+         grid-row-start:3;
+         grid-row-end: 4;
+      }
+
+      main .end-wrap
+      {
+         flex-direction: column;
+      }
+
+      main .latest-news
+      {
+         border-radius: 100px 100px 0px 0px;
+         border-right: 3px solid black;
+         border-bottom: none;
+      }
+
+      main .end-info
+      {
+         border-radius: 0px 0px 100px 100px;
+         border-left: 3px solid #F1BC00;
+         border-top: none;
+      }
+
+
+}

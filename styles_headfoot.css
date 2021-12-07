@@ -1,0 +1,549 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url("fonts/Gilroy-Light.otf") format("truetype");
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GilroyBold';
+    src: url("fonts/Gilroy-ExtraBold.otf") format("truetype");
+    font-style: bold;
+
+}
+
+@font-face
+{
+    font-family: 'Darmstadt';
+    src: url("fonts/DarmstadtArtsNf.ttf") format("truetype");
+    font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    height: fit-content;
+}
+
+body:before
+{
+    content: "";
+    position: fixed;
+    width:80%;
+    height: 100%;
+    background: white;
+    margin-left:10%;
+    margin-right: 10%;
+    z-index: -1;
+}
+
+a
+{
+    text-decoration:none;
+    color: black;
+}
+
+img
+{
+    user-select: none;
+}
+
+
+.header-bg
+{
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    min-height: 300px;
+    background-size: 100% 100%;
+    filter: brightness(0.4);
+    background-repeat: no-repeat;
+    background-image: url("images/type4.jpg");
+
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.header-bg
+{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background-size: 100% 100%;
+    filter: brightness(0.2);
+    background-repeat: no-repeat;
+    background-image: url("images/type4.jpg");
+    z-index: -1;
+
+}
+
+.header-left
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+
+}
+
+.header-left a
+{
+    color: white;
+    font-size: 22px;
+    font-family: GilroyBold;
+
+}
+
+.header-left a svg
+{
+    margin-left: 10px;
+}
+
+nav
+{
+    margin: auto;
+	background-color: transparent;
+}
+
+nav ul
+{
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+}
+
+			/* применяем inline-block позиционирование к элементам навигации */
+nav ul li {
+	margin: 0px -1px 0 0;
+	display:inline-block;
+	background-color: transparent;
+}
+
+			/* стилизуем ссылки */
+nav a
+{
+	display:block;
+	padding:0 20px;
+	color: white;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+
+nav a:hover
+{
+	color: #EE0000;
+}
+
+nav ul ul
+{
+	display: none;
+	position: absolute;
+	top: 100%;
+	z-index: 100;
+}
+			/* отображаем выпадающий список при наведении */
+nav ul li:hover > ul
+{
+	display:inherit;
+}
+
+nav ul ul li
+{
+    width: 320px;        /* высчитать ширину выпадения */
+    float:none;
+    display:list-item;
+    position: relative;
+    z-index: 100;
+}
+
+.header-right
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: GilroyBold;
+    gap: 10px;
+
+    margin-right: 5%;
+
+}
+
+.header-right a
+{
+    color: white;
+    font-size: 22px;
+
+    white-space: nowrap;
+
+}
+
+.header-right a:hover
+{
+
+    color: #F1BC00;
+}
+
+.header-right a svg
+{
+    margin-right: 10px;
+}
+
+.search-box
+{
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    border: 3px solid #F1BC00;
+    border-radius: 100%;
+    background: transparent;
+    padding: 10px;
+    transition: 0.5s;
+    align-items: center;
+
+}
+
+.search-box input
+{
+    border: none;
+}
+
+.input-frame
+{
+    display: none;
+    border: none;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.input-frame input
+{
+    background: transparent;
+    padding: 10px;
+    color: white;
+    font-size: 22px;
+    outline:none;
+}
+
+
+.loupe {
+    height:40px;
+    width:40px;
+    display:block;
+    position:relative;
+}
+
+.loupe:before, .loupe:after{
+    content:'';
+    height:20px;
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.loupe:before{
+    width:20px;
+    border:3px #F1BC00 solid;
+    border-radius:100%;
+}
+
+.loupe:after{
+    width:7px;
+    background:#F1BC00;
+    transform:rotate(-45deg);
+    top:17px;
+    left:24px;
+}
+
+.cross {
+    width:36px;
+    height:36px;
+    position:relative;
+    vertical-align: middle;
+    margin-top: auto;
+}
+
+.cross:before, .cross:after{
+    content:'';
+    position:absolute;
+    width:32px;
+    height:4px;
+    background-color: #F1BC00;
+    border-radius:2px;
+    top:11px;
+}
+
+.cross:before{
+    -webkit-transform:rotate(45deg);
+    left:2px;
+}
+.cross:after{
+    -webkit-transform:rotate(-45deg);
+    right:2px;
+}
+
+.white-switch           /* white shit */
+{
+    background: linear-gradient(to bottom, black 60%, white);
+    width: 100%;
+    height: 200px;
+    top: 230px;
+    margin: 0 auto;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 40%,100% 60%, 75% 95%, 25% 95%, 0% 60%,0% 40%);
+    display: block;
+    position: absolute;
+    z-index:10;
+}
+
+
+
+
+
+footer
+{
+    width: 100%;
+    background: black;
+}
+
+
+footer a
+{
+    cursor: pointer;
+}
+
+.footer-top
+{
+
+    font-family: GilroyBold;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #545454;
+    padding-bottom: 1%;
+    padding-top: 20px;
+
+}
+
+.footer-top p
+{
+    display: flex;
+    gap: 15px;
+    margin-left: 10%;
+
+}
+
+.footer-top p a path
+{
+    transition: 0.3s;
+}
+
+.footer-top p a:hover path
+{
+    fill: #F1BC00;
+}
+
+.f-buttons
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 10%;
+}
+
+.footer-button
+{
+    padding: 10px;
+    border: 3px solid #F1BC00;
+    background: transparent;
+    border-radius: 15px;
+    color: white;
+    font-family: GilroyBold;
+    font-size: 26px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer-button:hover
+{
+    background: #F1BC00;
+    color: black;
+
+}
+
+.footer-button:hover path
+{
+    fill: #F1BC00;
+    stroke: black;
+}
+
+.footer-middle
+{
+    margin-top: 1%;
+    color: white;
+    font-family: Gilroy;
+    border-bottom: 1px solid #545454;
+    width: 100%;
+
+
+}
+
+.footer-middle h3
+{
+    font-size: 22px;
+    margin-bottom: 2vh;
+}
+
+.footer-middle-rows
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    flex-wrap: wrap;
+}
+
+.footer-middle-rows div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-middle-rows div a
+{
+    color: white;
+}
+
+.footer-middle-rows div a:hover
+{
+    color: #F1BC00;
+}
+
+
+.footer-middle-rows div img
+{
+    border-radius: 20px;
+    width: 350px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.footer-middle-mob
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Gilroy;
+    border-bottom: 1px solid #545454;
+    margin-top: 20px;
+
+}
+
+.footer-middle-mob h3
+{
+    font-size: 26px;
+    font-family: Gilroy;
+}
+
+.footer-middle-mob a
+{
+     color: white;
+     font-family: Gilroy;
+     font-size: 20px;
+}
+
+.footer-middle-mob a:hover
+{
+        color: #F1BC00;
+
+}
+
+.footer-middle-mob-columns
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.footer-middle-mob-columns div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-middle-mob-columns p a:hover path
+{
+    fill: #F1BC00;
+}
+
+.footer-middle-mob p a path
+{
+    transition: 0.3s;
+}
+
+.footer-bottom
+{
+    margin-right: 10%;
+    margin-left: 10%;
+    color: #9E9E9E;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.footer-bottom-mob
+{
+    display:none;
+    text-align: center;
+    color: #9E9E9E;
+    font-family: Gilroy;
+}
+
+.toggle-menu {
+	display: none;
+	cursor: pointer;
+	float: left;
+
+}
+.bar1, .bar2, .bar3 {
+	width: 32px;
+	height: 4px;
+	background-color: #F1BC00;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+.change .bar1 {
+	transform: rotate(-45deg) translate(-7px, 6px);
+	background-color: #F1BC00;
+}
+.change .bar2 {
+	opacity: 0;
+	background-color: #F1BC00;
+}
+.change .bar3 {
+	transform: rotate(45deg) translate(-8px, -8px);
+	background-color: #F1BC00;
+}

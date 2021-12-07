@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Crew</title>
+    <link rel="stylesheet" href="styles_headfoot.css">
+    <link rel="stylesheet" href="media_headfoot.css">
+    <script defer src="headfoot.js"></script>
+    <link rel="shortcut icon" href="images/au151.png" type="image/png">
+    <link rel="stylesheet" href="styles_crew.css">
+</head>
+<body>
+
+<header class="header">
+</header>
+
+
+<main>
+    <h1>Meet our Crew</h1>
+    <div class="boss-box">
+        <div class="card-box" onmouseover="extendCard()" onmouseout="shrinkCard()">
+            <div class="icons">
+                <img src="https://img.icons8.com/nolan/50/facebook-new.png"/>
+                <img src="https://img.icons8.com/nolan/50/twitter-circled.png"/>
+                <img src="https://img.icons8.com/nolan/50/instagram-new.png"/>
+            </div>
+            <img src="images/boss.jpg" class="cardImg">
+            <div class="card-text">
+                <h3>James Dingo</h3>
+                <h6>Birdsville, Australia</h6>
+                <p>Owner and CEO of Outback Autos</p>
+            </div>
+            <div class="card-buttons">
+                <button>Send message</button>
+                <button>Appoint meeting</button>
+            </div>
+        </div>
+    </div>
+    <p>Every Outback Autos employee is part of one big family.<br>We work so that you can quickly sell your car in a trade-in or buy a new one.<br>Our experts are ready to help you at any stage, whether it is choosing a car, paperwork or technical inspection.</p>
+    <div class="crew-box">
+
+        <div class="member-box">
+            <img height="300px" src="images/papich.jpg" onclick="openModal()">
+            <h5>Vitaliy Zhal</h5>
+            <p>evilarthas1x1@autbackautos.au</p>
+            <p>Senior Sale Manager<br>Luremont Office</p>
+        </div>
+        <div class="member-box">
+            <img src="images/bogdan.jpg" onclick="openModal()">
+            <h5>Bogdan Stalnoy</h5>
+            <p>dyadyabogdan@outbackautos.au</p>
+            <p>Senior Mechanic<br>Dalamber Entrance</p>
+        </div>
+
+        <div class="member-box">
+            <img src="images/van.jpg" onclick="openModal()">
+            <h5>Van Darkholme</h5>
+            <p>dungeonmaster@outbackautos.au</p>
+            <p>Senior Mechanic<br>Luremont Entrance</p>
+        </div>
+        <div class="member-box">
+            <img src="images/mad.jpg" onclick="openModal()">
+            <h5>Matt Honey</h5>
+            <p>etozhemad@outbackautos.au</p>
+            <p>Senior Sales Manager<br>Dalamber Office</p>
+        </div>
+        <div class="member-box">
+            <img src="images/larin.png" onclick="openModal()">
+            <h5>Kit Round</h5>
+            <p>protiv@outbackautos.au</p>
+            <p>Finance Manager<br>Dalamber Office</p>
+        </div>
+        <div class="member-box">
+            <img src="images/goblin.jpg" onclick="openModal()">
+            <h5>Max Gus</h5>
+            <p>razvedopros@outbackautos.au</p>
+            <p>Senior Valuer<br>Luremont Office</p>
+        </div>
+        <button>Load more workers...</button>
+
+    </div>
+</main>
+
+
+<div class="modal">
+    <div class="star-box">
+        <h3>Leave a review</h3>
+        <div class="stars" onmouseover="starsAnim()" onmouseleave="starsLeave()">
+            <svg height="20.68" width="19.8" class="star">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+            </svg>
+            <svg height="20.68" width="19.8" class="star">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+            </svg>
+            <svg height="20.68" width="19.8" class="star">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+            </svg>
+            <svg height="20.68" width="19.8" class="star">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+            </svg>
+            <svg height="20.68" width="19.8" class="star">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+            </svg>
+        </div>
+
+        <div class="verdict">
+            <h1 style="color: red">Awful!</h1>
+            <h1 style="color: maroon">Bad</h1>
+            <h1 style="color: black">Average</h1>
+            <h1 style="color: lime">Good</h1>
+            <h1 style="color: green">Amazing!</h1>
+        </div>
+
+        <input type="text" placeholder="Share your experience" id="otziv">
+        <button class="send-rating">Send</button>
+
+        <div class="stage-2">
+            <a>Change review</a>
+            <h1 style="margin-top: 10px">Thank you!</h1>
+        </div>
+    </div>
+</div>
+<div class="overlay" onclick="closeModal()"></div>
+
+
+<footer class="footer">
+</footer>
+
+
+</body>
+<script>
+
+    let imgCard = document.querySelector(".cardImg");
+    let card = document.querySelector(".card-box");
+    let iconsCard = document.querySelector(".icons");
+    let buttonsCard = document.querySelector(".card-buttons");
+    let textCard = document.querySelector(".card-text");
+    let secondClick = false;
+
+    function extendCard()
+    {
+        card.style="border-radius:15px";
+        iconsCard.style.display = "block";
+        textCard.style.display = "block";
+        buttonsCard.style.display = "block";
+    }
+
+    function shrinkCard()
+    {
+        card.style.width = "fit-content";
+        card.style.height = "auto";
+        card.style="border-radius:100%";
+        iconsCard.style.display = "none";
+        textCard.style.display = "none";
+        buttonsCard.style.display = "none";
+        imgCard.style="border-radius: 100%";
+        secondClick = false;
+
+    }
+
+    imgCard.addEventListener("click",e=>{
+        if(secondClick)
+        {
+
+            imgCard.style="border-radius: 100%";
+            iconsCard.style.display = "block";
+            textCard.style.display = "block";
+            buttonsCard.style.display = "block";
+            secondClick=false;
+        }
+        else
+        {
+
+
+            imgCard.style="border-radius: 15px";
+            iconsCard.style.display = "none";
+            textCard.style.display = "none";
+            buttonsCard.style.display = "none";
+            secondClick=true;
+        }
+    });
+
+
+    function starsAnim()
+    {
+        let starBox = document.querySelector(".stars");
+        let stars = document.querySelectorAll(".star polygon");
+        let verdicts = document.querySelectorAll(".verdict h1");
+        let headTitle = document.querySelector(".star-box>h3");
+
+
+        for (let i=0;i<5;i++)
+        {
+            stars[i].addEventListener("click",function(e){
+                headTitle.style.display = "none";
+                let stgTwoB = document.getElementsByClassName("send-rating")[0];
+                if (!(starBox.classList.contains("fixed")))
+                {
+                    verdicts[i].style.display= "block";
+                    document.getElementById("otziv").style.display= "block";
+                    document.getElementsByClassName("send-rating")[0].style.display = "block";
+                    starBox.classList.add("fixed");
+                }
+                stgTwoB.addEventListener("click", function(e){
+                    starBox.style.display="none";
+                    verdicts[i].style.display= "none";
+                    document.getElementById("otziv").style.display= "none";
+                    document.getElementById("otziv").value="";
+                    document.getElementsByClassName("send-rating")[0].style.display = "none";
+                    document.getElementsByClassName("stage-2")[0].style.display="block";
+                    let returnToStart = document.querySelector(".stage-2 a");
+                    returnToStart.addEventListener("click", function(e){
+                        starBox.style.display="block";
+                        starBox.classList.remove("fixed");
+                        document.getElementsByClassName("stage-2")[0].style.display="none";
+                            headTitle.style.display = "block";
+
+                    });
+                });
+            });
+                stars[i].addEventListener('mouseover', function roflan(e) {
+                if (! starBox.classList.contains("fixed")) {
+
+
+                        for (let j=0;j<i+1;j++)
+                        {
+                            stars[j].style.fill = "yellow";
+
+                        }
+
+                        for (let j=i+1;j<5;j++)
+                        {
+                            stars[j].style.fill="black";
+                        }
+
+
+                  }
+
+
+              });
+        }
+    }
+
+
+    function starsLeave()
+    {
+        let starBox = document.querySelector(".stars");
+        let stars = document.querySelectorAll(".star polygon");
+        if(starBox.classList.contains("fixed"))
+        {
+            return;
+        }
+        else
+        {
+            if(stars[1].style.fill=="black")
+            {
+                stars[0].style.fill="black";
+            }
+        }
+    }
+
+    function openModal()
+    {
+        document.querySelector(".overlay").style.display="block";
+        document.querySelector(".modal").style.display="block";
+        let otziv = document.querySelector("#otziv");
+        otziv.value="";
+    }
+
+
+    function closeModal()
+    {
+        document.querySelector(".overlay").style.display="none";
+        document.querySelector(".modal").style.display="none";
+    }
+
+
+</script>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="styles_headfoot.css">
+    <link rel="stylesheet" href="media_headfoot.css">
+    <script defer src="headfoot.js"></script>
+    <link rel="shortcut icon" href="images/au151.png" type="image/png">
+    <link rel="stylesheet" href="styles_shop.css">
+</head>
+<body>
+
+<header class="header">
+</header>
+
+<main>
+    <div>
+        <h1>Available offers</h1>
+        <div class="car-search">
+            <select>
+                <option disabled selected>Select a make</option>
+                <option>Acura</option>
+                <option>BMW</option>
+                <option>Chevrolet</option>
+                <option>Honda</option>
+                <option>Hyunday</option>
+                <option>Jeep</option>
+                <option>Mazda</option>
+                <option>Mercedes</option>
+                <option>Mitsubushi</option>
+                <option>Porsche</option>
+                <option>Subaru</option>
+                <option>Toyota</option>
+            </select>
+            <input type="text" placeholder="Enter a model">
+            <button>Search</button>
+        </div>
+
+        <div class="logo-grid">
+            <div>
+                <img src="logos/acura.png">
+            </div>
+            <div>
+                <img src="logos/bmw.png">
+            </div>
+            <div>
+                <img src="logos/chevrolet.png">
+            </div>
+            <div>
+                <img src="logos/honda.png">
+            </div>
+            <div>
+                <img src="logos/hyunday.png">
+            </div>
+            <div>
+                <img src="logos/jeep.png">
+            </div>
+            <div>
+                <img src="logos/mazda.png">
+            </div>
+            <div>
+                <img src="logos/mercedes.png">
+            </div>
+            <div>
+                <img src="logos/mitsubishi.png">
+            </div>
+            <div>
+                <img src="logos/porsche.png">
+            </div>
+            <div>
+                <img src="logos/subaru.png">
+            </div>
+            <div>
+                <img src="logos/toyota.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="count-box">
+        <h3>Win new <span>UAZ</span> in lottery: </h3>
+        <div class="time">
+            <p id="days">54</p>
+            <p id="hours">54</p>
+            <p id="minutes">54</p>
+            <p id="seconds">54</p>
+        </div>
+        <img src="images/uazCar.png">
+    </div>
+
+    <div class="most-popular">
+        <h3>Most popular models</h3>
+        <div>
+            <div>
+                <img src="images/mustangCar.png">
+                <p>Ford Mustang</p>
+            </div>
+            <div>
+                <img src="images/nissanCar.png">
+                <p>Nissan Qashqai</p>
+            </div>
+            <div>
+                <img src="images/panameraCar.png">
+                <p>Porsche Panamera</p>
+            </div>
+            <div>
+                <img src="images/tahoeCar.png">
+                <p>Chevrolet Tahoe</p>
+            </div>
+            <div>
+                <img src="images/mondeoCar.png">
+                <p>Ford Mondeo</p>
+            </div>
+            <div>
+                <img src="images/mitsubishiCar.png">
+                <p>Mitsubishi Lancer</p>
+            </div>
+        </div>
+        <button>Load more cars...</button>
+    </div>
+
+</main>
+
+<footer class="footer">
+</footer>
+
+</body>
+<script>
+        let day = document.getElementById("days");
+    let hour = document.getElementById("hours");
+    let minute = document.getElementById("minutes");
+    let second = document.getElementById("seconds");
+
+    function setTimer()
+    {
+        let now = new Date().getTime();
+        var endDate = new Date("Jan 10, 2022 00:00:00").getTime();
+        let t = endDate - now;
+        if (t<=0)
+        {
+            clearInterval();
+            alert("Kid, you're still alive?")
+        }
+        else
+        {
+
+            day.innerText = Math.floor(t/(1000*60*60*24)) + " days";
+            hour.innerText =  ('0'+Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2) + " hours";
+            minute.innerText= ('0'+Math.floor((t % (1000 * 60 * 60)) / (1000 * 60))).slice(-2) + " minutes";
+            second.innerText= ('0'+Math.floor((t % (1000 * 60)) / 1000)).slice(-2) + " seconds";
+        }
+
+
+
+        setTimeout(()=>{
+            setTimer();
+        },1000);
+    }
+    setTimer();
+</script>
+</html>

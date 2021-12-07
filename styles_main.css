@@ -1,0 +1,505 @@
+body
+{
+    background: #F6F6F6;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    background:white;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 22vh;
+    height: 100%;
+}
+
+
+button
+{
+    cursor: pointer;
+}
+
+main h1
+{
+    font-family: Darmstadt;
+    color: black;
+    font-size: 154px;
+    text-align:center;
+    text-shadow: 0 0 10px #F1BC00;
+    font-weight: lighter;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+
+.shop-info
+{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+.counter-box
+{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    background: transparent;
+    margin: auto;
+    border: 3px solid #F1BC00;
+    border-radius: 15px;
+}
+
+.counter-item
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 24px;
+    font-family: Gilroy;
+    color: #F1BC00;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+
+}
+
+.counter-item img
+{
+    width: 100%;
+    max-width: 128px;
+    max-height: 128px;
+    margin: auto;
+}
+
+.shop-info>div
+{
+     display: flex;
+     align-items: center;
+     gap: 40px;
+}
+
+.shop-info h3
+{
+    font-family: Gilroy;
+    font-size: 70px;
+    color: #F1BC00;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.shop-info p
+{
+    font-family: Gilroy;
+    font-size: 28px;
+    color: black;
+
+}
+
+.shop-info a
+{
+    transition: 0.3s;
+    font-family: Gilroy;
+    font-size: 54px;
+    color: black;
+}
+
+
+.shop-info a:not(:hover)
+{
+    animation: pulse 0.8s ease infinite;
+    animation-direction: alternate;
+}
+
+.shop-info a:hover
+{
+    color: green;
+    text-shadow: 0px 0px 2px green;
+}
+
+#australia img
+{
+
+    max-width: 350px;
+    max-height: 350px;
+
+}
+
+.shop-info>div>div>p
+{
+    text-align: justify;
+}
+
+
+@keyframes pulse
+{
+    0%{
+        transform: scale(1);
+        color: black;
+    }
+
+    50%{
+        transform: scale(1.25);
+
+    }
+
+    100%{
+        transform: scale(1.5);
+        color: #F1BC00;
+    }
+
+}
+
+
+.sell-info
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sell-info h3
+{
+    font-family: Gilroy;
+    font-size: 70px;
+    color: #F1BC00;
+}
+
+
+.sell-info div
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.sell-info div p
+{
+    font-family: Gilroy;
+    font-size: 28px;
+}
+
+.sell-info div img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.sell-info button
+{
+    background:black;
+
+    font-family: Gilroy;
+    font-weight: bold;
+    padding: 30px;
+    font-size: 24px;
+    border: 3px solid #F1BC00;
+    border-radius: 15px;
+    transition: 0.3s;
+
+}
+
+.sell-info button a
+{
+    color: white;
+}
+
+.sell-info button:hover
+{
+    background: #F1BC00;
+    color: black;
+    border: 3px solid black;
+}
+
+.sell-info button:hover a
+{
+    color: black;
+}
+
+
+.test-info
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.test-info h3
+{
+    font-family: Gilroy;
+    font-size: 64px;
+    color: #F1BC00;
+}
+
+.test-info div
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.test-info div p
+{
+    font-family: Gilroy;
+    font-size: 28px;
+}
+
+
+.buttonFlip {
+    border: 3px solid black;
+    border-radius: 15px;
+    min-width: 150px;
+    min-height: 100px;
+    width: 10vw;
+    height: 8vh;
+    min-height: 60px;
+    background: transparent;
+    perspective: 1000px;
+    box-shadow: 0px 0px 15px black inset;
+    font-size: 32px;
+
+}
+
+
+.buttonInner {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+
+}
+
+
+.buttonFlip:hover .buttonInner {
+  transform: rotateX(180deg);
+}
+
+.front {
+      border-radius: 15px;
+      background-color: #F1BC00;
+      color: black;
+      margin: auto;
+      vertical-align: middle;
+      font-family: Maler !important;
+      text-align: center;
+
+}
+
+
+.back {
+      border-radius: 15px;
+      background-color: black;
+      color: #F1BC00;
+      transform: rotateX(180deg);
+      margin: auto;
+      vertical-align: middle;
+      font-family: Maler !important;
+      text-align: center;
+}
+
+
+.front, .back {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+.crew-info
+{
+    margin:auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 50px;
+}
+.crew-info img
+{
+    grid-column-start:1;
+    grid-column-end: 2;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.crew-info h3
+{
+    font-family: Gilroy;
+    font-size: 70px;
+    margin: auto;
+    color: #F1BC00;
+
+}
+
+.crew-info p
+{
+    font-family: Gilroy;
+    font-size: 28px;
+    grid-column-start:2;
+    grid-column-end: 4;
+    margin: auto;
+
+}
+
+.crew-info button
+{
+    border: 3px solid black;
+    background:#F1BC00;
+    font-family: Gilroy;
+    font-size: 34px;
+    padding: 5px;
+    color: black;
+    border-radius: 15px;
+    grid-row-start:2;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end: 2;
+    white-space: nowrap;
+    transition: 0.3s;
+    padding:10px;
+}
+
+.crew-info button:hover a
+{
+
+    color: white;
+}
+
+.crew-info button:hover
+{
+    background: black;
+    border: 3px solid #F1BC00;
+}
+
+.end-wrap
+{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10vh;
+
+}
+
+.latest-news
+{
+
+    background: #F1BC00;
+    padding: 30px;
+    border-radius: 100px 0px 0px 100px;
+    border: 3px solid black;
+    border-right: none;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+}
+
+.latest-news h3
+{
+    font-family: Gilroy;
+    font-size: 34px;
+    color: black;
+
+
+}
+
+.latest-news button
+{
+
+    margin: auto;
+    background:white;
+    color: black;
+    font-family: Gilroy;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 24px;
+    border: 3px solid #F1BC00;
+    border-radius: 15px;
+    transition: 0.3s;
+
+
+}
+
+.latest-news button:hover
+{
+
+    background:black;
+}
+
+.latest-news button:hover a
+{
+    color: white;
+}
+
+.end-info
+{
+
+    background: black;
+    padding: 30px;
+    text-align: center;
+    border-radius: 0px 100px 100px 0px;
+    border-left: none;
+    border: 3px solid #F1BC00;
+}
+
+.end-info h3
+{
+    font-family: Gilroy;
+    font-size: 34px;
+    color: #F1BC00;
+    margin-bottom: 20px;
+
+}
+
+.end-info p
+{
+    color: white;
+    font-family: Gilroy;
+    font-size: 24px;
+
+}
+
+.end-info p span
+{
+    color: #F1BC00;
+}
+
+
+.youtube-video
+{
+    width: 80%;
+    height: fit-content;
+    margin:auto;
+
+}
+
+.youtube-video h3
+{
+    font-family: Gilroy;
+    font-size: 58px;
+    color: #F1BC00;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.youtube-video iframe
+{
+    border-radius: 15px;
+    border: 5px solid #F1BC00;
+}

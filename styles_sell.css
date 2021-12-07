@@ -1,0 +1,314 @@
+body
+{
+    background: #F6F6F6;
+}
+
+a
+{
+    cursor: pointer;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    background:white;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+
+button
+{
+    cursor: pointer;
+}
+
+main h1
+{
+    font-family: Gilroy;
+    color: black;
+    font-size: 100px;
+    text-align:center;
+    text-shadow: 0 0 10px #F1BC00;
+    padding-top: 80px;
+}
+
+main>p
+{
+    font-family: Gilroy;
+    color: black;
+    font-size: 30px;
+}
+
+.buy-grid
+{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 25px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    align-items: start;
+
+}
+
+.buy-grid #left
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+#left h3
+{
+    font-family: Gilroy;
+    color: #F1BC00;
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+#left p
+{
+    font-family: Gilroy;
+    color: black;
+    font-size: 24px;
+    margin-bottom: 5px;
+
+}
+
+
+#right h3
+{
+    font-family: Gilroy;
+    color: #F1BC00;
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+#right p
+{
+    font-family: Gilroy;
+    color: black;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+
+.buy-grid img
+{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin: auto;
+}
+
+.buy-grid button
+{
+
+    background:black;
+    color: white;
+    font-family: Gilroy;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 24px;
+    border: 3px solid #F1BC00;
+    border-radius: 15px;
+    transition: 0.3s;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    min-height: 100px;
+    min-width: 150px;
+    margin: auto;
+
+}
+
+.buy-grid button:hover
+{
+    background:white;
+    color: black;
+}
+
+
+.buy-grid #right
+{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.value-wrap
+{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.value-wrap h3
+{
+     font-family: Gilroy;
+     color: #F1BC00;
+     font-size: 58px;
+     margin-bottom: 5px;
+}
+
+.value-wrap>p
+{
+     font-family: Gilroy;
+     color: black;
+     font-size: 25px;
+}
+
+.value-box
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.value-item
+{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap:5px;
+}
+
+.value-item img
+{
+    float: left;
+    width: 100%;
+
+}
+
+.value-item h5
+{
+    font-family: Gilroy;
+     color: #F1BC00;
+     font-size: 24px;
+}
+
+.value-item p
+{
+    font-family: Gilroy;
+     color: black;
+     font-size: 18px;
+}
+
+main>h3
+{
+    font-family: Gilroy;
+    color: #F1BC00;
+    font-weight: bold;
+    font-size: 54px;
+    margin-bottom: 30px;
+}
+
+.two-side
+{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: start;
+    margin-bottom: 100px;
+}
+
+.two-side>div
+{
+    width: 50%;
+}
+
+.two-side>div:first-child
+{
+    background: black;
+    color: white;
+    border: 3px solid #F1BC00;
+    border-radius: 15px 0px 0px 15px;
+    border-right: none;
+    padding: 20px;
+}
+
+
+.two-side>div:last-child
+{
+    background: #F1BC00;
+    color: black;
+    border: 3px solid black;
+    border-radius: 0px 15px 15px 0px;
+    border-left: none;
+    padding: 20px;
+}
+
+.two-side>div:first-child h3
+{
+    font-family: Gilroy;
+    font-weight: bold;
+    color: #F1BC00;
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+
+.two-side>div:last-child h3
+{
+    font-family: Gilroy;
+    font-weight: bold;
+    color: black;
+    font-size: 34px;
+}
+
+.two-side>div:first-child p
+{
+    font-family: Gilroy;
+
+    font-size: 22px;
+}
+
+.two-side>div>div
+{
+    margin-top: 30px;
+    background: rgba(125,128,128,0.25);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.two-side>div>div p
+{
+    margin-top: 20px;
+    width:fit-content;
+    font-family: Gilroy;
+    font-weight: bold;
+    color: white;
+    font-size: 20px !important;
+
+
+}
+
+.two-side>div:last-child ul
+{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.two-side>div:last-child ul li
+{
+    font-family: Gilroy;
+    color: black;
+    font-size: 26px;
+}
