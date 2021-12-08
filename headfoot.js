@@ -1,6 +1,6 @@
 document.getElementsByClassName("header")[0].innerHTML=` <div class="header-bg"></div>
         <div class="header-left">
-            <a href="mainpage.html"><img src="images/au151.png" alt="OUTBACK AUTOS" href="mainpage.html"></a>
+            <a href="index.html"><img src="images/au151.png" alt="OUTBACK AUTOS" href="index.html"></a>
             <nav>
                 <div class="toggle-menu" onclick="buttonClicked(this)">
                     <div class="bar1"></div>
