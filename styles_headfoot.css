@@ -547,6 +547,10 @@ footer a
 }
 .change .bar1 {
 	transform: rotate(-45deg) translate(-7px, 6px);
+	-o- transform: rotate(-45deg) translate(-7px,6px);
+	-ms- transform: rotate(-45deg) translate(-7px,6px);
+	-moz- transform: rotate(-45deg) translate(-7px,6px);
+	-webkit- transform: rotate(-45deg) translate(-7px,6px);
 	background-color: #F1BC00;
 }
 .change .bar2 {
@@ -555,5 +559,9 @@ footer a
 }
 .change .bar3 {
 	transform: rotate(45deg) translate(-8px, -8px);
+	-o- transform: rotate(45deg) translate(-8px,-8px);
+	-ms- transform: rotate(45deg) translate(-8px,-8px);
+	-moz- transform: rotate(45deg) translate(-8px,-8px);
+	-webkit- transform: rotate(45deg) translate(-8px,-8px);
 	background-color: #F1BC00;
 }
