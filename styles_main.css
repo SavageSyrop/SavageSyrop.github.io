@@ -308,6 +308,10 @@ main h4
 
 .buttonFlip:hover .buttonInner {
   transform: rotateX(180deg);
+    -o- transform: rotateX(180deg);
+    -ms- transform: rotateX(180deg);
+    -moz- transform: rotateX(180deg);
+    -webkit- transform: rotateX(180deg);
 }
 
 .front {
@@ -327,6 +331,10 @@ main h4
       background-color: black;
       color: #F1BC00;
       transform: rotateX(180deg);
+      -o- transform: rotateX(180deg);
+      -ms- transform: rotateX(180deg);
+      -moz- transform: rotateX(180deg);
+      -webkit- transform: rotateX(180deg);
       margin: auto;
       vertical-align: middle;
       font-family: Maler !important;
