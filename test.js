@@ -168,8 +168,8 @@ function Update()
                 maxIndex = i;
             }
        }
-       imgQuiz.setAttribute("src",results[maxIndex-1].image);
-       headElem.innerHTML = results[maxIndex-1].text;
+       imgQuiz.setAttribute("src",results[maxIndex].image);
+       headElem.innerHTML = results[maxIndex].text;
        pagesElem.style.display = "none";
    }
 }
@@ -190,7 +190,7 @@ function Init()
 function Click(index,j)
 {
    currentQuestion++;
-    scores[index]+=1;
+    scores[index-1]+=1;
 
    let btns = document.getElementsByClassName("button");
 
